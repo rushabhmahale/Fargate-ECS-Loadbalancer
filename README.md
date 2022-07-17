@@ -33,4 +33,13 @@ Reffer this doc:- https://docs.aws.amazon.com/AmazonECS/latest/userguide/cluster
 
 Reffer to this doc steps to create ec2 machine :- https://docs.aws.amazon.com/efs/latest/ug/gs-step-one-create-ec2-resources.html
 
+## Step2 Connect the instance via ssh 
+![image](https://user-images.githubusercontent.com/63963025/179386226-79cce9b3-8de9-44e3-bbed-7161bfaa1add.png)
 
+- <b>Note:- This only work with aws and ubuntu machine we have to use putty or Dameware SSH client , etc </b> 
+- sudo su 
+- mkdir fargate-code 
+- cd fargate-code 
+- vi app.py 
+- [Code app.py](*)
+- 
