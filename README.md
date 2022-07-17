@@ -42,4 +42,6 @@ Reffer to this doc steps to create ec2 machine :- https://docs.aws.amazon.com/ef
 - cd fargate-code 
 - vi app.py 
 - [Code app.py](*)
-- 
+  
+  ![image](https://user-images.githubusercontent.com/63963025/179386795-5b780acf-4b63-4ddb-b85d-886ac516f13b.png)
+
