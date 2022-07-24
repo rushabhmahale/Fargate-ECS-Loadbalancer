@@ -45,3 +45,23 @@ Reffer to this doc steps to create ec2 machine :- https://docs.aws.amazon.com/ef
   
   ![image](https://user-images.githubusercontent.com/63963025/179386795-5b780acf-4b63-4ddb-b85d-886ac516f13b.png)
 
+- Create <b>Dockerfile</b> 
+
+![image](https://user-images.githubusercontent.com/63963025/180633226-5e21ffcf-ded0-4ad3-8e27-458358491bca.png)
+
+- [Code Dockerfile](*)
+
+- Create <b> requirement.txt </b> 
+
+![image](https://user-images.githubusercontent.com/63963025/180633261-a20dfb3a-76ec-4167-a757-a33da7839400.png)
+
+- [Code requirement.txt](*) 
+ 
+- Create folder <b>templates</b> and add the <b>index.html</b> content 
+ 
+![image](https://user-images.githubusercontent.com/63963025/180633506-1aaba8b8-8c69-43e8-b506-d1956ee9396d.png)
+
+- tree
+
+![Uploading image.png…]()
+
