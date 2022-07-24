@@ -107,7 +107,31 @@ Reffer to this doc steps to create ec2 machine :- https://docs.aws.amazon.com/ef
 - Select Access key - Programmatic access
 ![image](https://user-images.githubusercontent.com/63963025/180635112-9eaa5846-d5d7-4758-832c-866e96bed742.png)
 
-- Attach existing policies directly:- <b> AmazonElasticContainerRegistryPublicFullAccess </b>
+- Attach existing policies directly:- <b> AmazonEC2ContainerRegistryFullAccess </b>
+
+![image](https://user-images.githubusercontent.com/63963025/180648943-71344e5e-757f-4c50-80bf-cdffa1d5abec.png)
+
+
+- Copy Access key and secret key we will use it later for authentication using awscli 
+
+![image](https://user-images.githubusercontent.com/63963025/180647796-eac50831-4928-4c90-8d37-e5cb5274d876.png)
+
+- <b> Note Don't share your Access-key and secret-key to anyone after use can deactivate that user access-key and secret-key</b>
+
+- Setup aws cli profile fargate 
+- aws configure --profile <profile name>
+
+![image](https://user-images.githubusercontent.com/63963025/180648037-44ad28be-d2a0-47d1-8f0f-a549a8641313.png)
+
+- confirm using  <b> aws ecr describe-repositories </b> command
+
+![image](https://user-images.githubusercontent.com/63963025/180648330-bc9d506f-76e2-4120-a614-5c8f7523da00.png)
+
+- Now lets push image to ECR 
+
+  ![image](https://user-images.githubusercontent.com/63963025/180648393-1ec50a47-8aaf-45db-ba3a-8e49afbb39c2.png)
+
+  ![image](https://user-images.githubusercontent.com/63963025/180648410-f0b508d2-e2a2-44fd-8b9b-d6f985b28e71.png)
 
 
 
