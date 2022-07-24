@@ -87,6 +87,27 @@ Reffer to this doc steps to create ec2 machine :- https://docs.aws.amazon.com/ef
 ![image](https://user-images.githubusercontent.com/63963025/180634238-67f23800-c3b8-4f51-90b5-e5eba701206a.png)
 
 ## Step4 Push image to ECR( Elastic Container Registry)
-- 
+- Search for ECR 
+![image](https://user-images.githubusercontent.com/63963025/180634736-7110e2f0-8d5a-4b3a-918f-c1745a1250f3.png)
+
+- Get started and create ECR repository
+ ![image](https://user-images.githubusercontent.com/63963025/180634750-e2c2e778-6cf1-4f59-9f9e-3f4739c09dad.png)
+
+- Create Private Repo (good to create private repo because we dont want to expose our image publically specially in production environment) 
+![image](https://user-images.githubusercontent.com/63963025/180634834-712fb215-bc70-4191-92d0-96d4b64fa529.png)
+
+![image](https://user-images.githubusercontent.com/63963025/180634965-73a77986-20bb-4898-bcdf-8ff3c8497ccb.png)
+
+- Now go to IAM 
+
+![image](https://user-images.githubusercontent.com/63963025/180635002-296aa88b-5176-4718-93b7-13326a0e0553.png)
+
+- Go to user create user 
+- Add username
+- Select Access key - Programmatic access
+![image](https://user-images.githubusercontent.com/63963025/180635112-9eaa5846-d5d7-4758-832c-866e96bed742.png)
+
+- Attach existing policies directly:- <b> AmazonElasticContainerRegistryPublicFullAccess </b>
+
 
 
