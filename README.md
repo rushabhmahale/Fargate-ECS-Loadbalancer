@@ -63,5 +63,30 @@ Reffer to this doc steps to create ec2 machine :- https://docs.aws.amazon.com/ef
 
 - tree
 
-![Uploading image.png…]()
+![image](https://user-images.githubusercontent.com/63963025/180633563-b9a0ad3d-1109-4804-80a5-b9986ca4fed1.png)
+
+- [Code index.html](*)
+
+![image](https://user-images.githubusercontent.com/63963025/180633621-1c315e74-1a01-446a-b9d5-c292a05b60cf.png)
+
+## Step3 Create Dockerimage 
+
+- <b>Note:-Install Docker in Amazon Linux 2 if not install:- https://docs.aws.amazon.com/AmazonECR/latest/userguide/getting-started-cli.html </b> 
+- yum update -y 
+- yum install docker -y 
+- systemctl start docker
+- Now lets create image 
+- docker build -t fargate:v1 . 
+![image](https://user-images.githubusercontent.com/63963025/180634141-c6f4e9fb-7a3b-45d8-9392-1a569825b7c2.png)
+- docker image (verify image is been created) 
+![image](https://user-images.githubusercontent.com/63963025/180634169-f182ff5d-683a-4509-b429-8033567a8b98.png)
+- Before uploading image to ECR lets test the image its working or not 
+- docker run -dit -p8080:8081 fargate:v1 
+- docker ps 
+- curl <intenralip_ec2>:8080
+![image](https://user-images.githubusercontent.com/63963025/180634238-67f23800-c3b8-4f51-90b5-e5eba701206a.png)
+
+## Step4 Push image to ECR( Elastic Container Registry)
+- 
+
 
