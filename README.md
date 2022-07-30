@@ -94,7 +94,7 @@ Reffer to this doc steps to create ec2 machine :- https://docs.aws.amazon.com/ef
  ![image](https://user-images.githubusercontent.com/63963025/180634750-e2c2e778-6cf1-4f59-9f9e-3f4739c09dad.png)
 
 - Create Private Repo (good to create private repo because we dont want to expose our image publically specially in production environment) 
-![image](https://user-images.githubusercontent.com/63963025/180634834-712fb215-bc70-4191-92d0-96d4b64fa529.png)
+![image](https://user-images.githubusercontent.com/63963025/181880264-cc757171-4224-4db2-a075-e195f1a884ff.png)
 
 ![image](https://user-images.githubusercontent.com/63963025/180634965-73a77986-20bb-4898-bcdf-8ff3c8497ccb.png)
 
