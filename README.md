@@ -130,9 +130,10 @@ Reffer to this doc steps to create ec2 machine :- https://docs.aws.amazon.com/ef
 
 - Now lets push image to ECR 
 
-  ![image](https://user-images.githubusercontent.com/63963025/180648393-1ec50a47-8aaf-45db-ba3a-8e49afbb39c2.png)
+  ![image](https://user-images.githubusercontent.com/63963025/181893137-2a2f9a72-d773-469f-8c9d-026b3e1b31c0.png)
 
-  ![image](https://user-images.githubusercontent.com/63963025/180648410-f0b508d2-e2a2-44fd-8b9b-d6f985b28e71.png)
+  ![image](https://user-images.githubusercontent.com/63963025/181893675-0b43cffa-ee80-4cd2-aad8-41a565b08131.png)
+
 
 
 
