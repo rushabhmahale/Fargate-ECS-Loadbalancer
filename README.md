@@ -134,7 +134,17 @@ Reffer to this doc steps to create ec2 machine :- https://docs.aws.amazon.com/ef
 
   ![image](https://user-images.githubusercontent.com/63963025/181893675-0b43cffa-ee80-4cd2-aad8-41a565b08131.png)
 
+- If you face any difficulty pushing image go to mentioned "Actions". Following JSON policy can be added in Amazon ECR >> Repositories >> Select Required Repository >> Permissions >> Edit statement add this principle 
+  ```
+"ecr:BatchGetImage",
+"ecr:BatchCheckLayerAvailability",
+"ecr:CompleteLayerUpload",
+"ecr:GetDownloadUrlForLayer",
+"ecr:InitiateLayerUpload",
+"ecr:PutImage",
+"ecr:UploadLayerPart"
+  ```
 
+![image](https://user-images.githubusercontent.com/63963025/182036259-8478d0e2-3028-4dd3-903b-b68bf3035ae0.png)
 
-
-
+ 
