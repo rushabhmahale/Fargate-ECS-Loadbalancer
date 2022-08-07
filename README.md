@@ -135,7 +135,9 @@ Reffer to this doc steps to create ec2 machine :- https://docs.aws.amazon.com/ef
   ![image](https://user-images.githubusercontent.com/63963025/181893675-0b43cffa-ee80-4cd2-aad8-41a565b08131.png)
 
 - If you face any difficulty pushing image go to mentioned "Actions". Following JSON policy can be added in Amazon ECR >> Repositories >> Select Required Repository >> Permissions >> Edit statement add this principle 
-  ```
+  
+
+```  
 "ecr:BatchGetImage",
 "ecr:BatchCheckLayerAvailability",
 "ecr:CompleteLayerUpload",
@@ -143,8 +145,33 @@ Reffer to this doc steps to create ec2 machine :- https://docs.aws.amazon.com/ef
 "ecr:InitiateLayerUpload",
 "ecr:PutImage",
 "ecr:UploadLayerPart"
-  ```
+```
+ 
 
 ![image](https://user-images.githubusercontent.com/63963025/182036259-8478d0e2-3028-4dd3-903b-b68bf3035ae0.png)
 
- 
+![image](https://user-images.githubusercontent.com/63963025/183281018-8d00d693-c546-4027-97fa-6599c0071e95.png)
+
+  
+```
+# Command to build an image
+docker image build -t <IMAGE_NAME>:<IMAGE_TAG> .
+
+```
+```  
+# Command to tag an image
+docker image tag <IMAGE_NAME>:<IMAGE_TAG>  <REPOSITORY_URI>:<IMAGE_TAG>
+
+```
+```
+# login ECR 
+aws ecr get-login-password --region <REPOSITORY_REGION> | docker login --username AWS --password-stdin <REPOSITORY_URI>  
+```  
+
+```
+# Push docker image to ECR 
+docker image push <IMAGE_NAME[:TAG]>
+```  
+
+![image](https://user-images.githubusercontent.com/63963025/183281570-988fab22-0075-4978-9be4-de3d9058c9c5.png)
+
