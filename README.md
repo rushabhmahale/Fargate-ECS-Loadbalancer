@@ -175,3 +175,9 @@ docker image push <IMAGE_NAME[:TAG]>
 
 ![image](https://user-images.githubusercontent.com/63963025/183281570-988fab22-0075-4978-9be4-de3d9058c9c5.png)
 
+## Step5 Create ECS Amazon Elastic Container Service
+Amazon Elastic Container Service (Amazon ECS) is a highly scalable and fast container management service. You can use it to run, stop, and manage containers on a cluster. With Amazon ECS, your containers are defined in a task definition that you use to run an individual task or task within a service. In this context, a service is a configuration that you can use to run and maintain a specified number of tasks simultaneously in a cluster. You can run your tasks and services on a serverless infrastructure that's managed by AWS Fargate. Alternatively, for more control over your infrastructure, you can run your tasks and services on a cluster of Amazon EC2 instances that you manage. <br>
+
+Reffer this doc:- https://docs.aws.amazon.com/AmazonECS/latest/developerguide/Welcome.html
+
+- Go to 
