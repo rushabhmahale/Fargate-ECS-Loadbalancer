@@ -180,4 +180,57 @@ Amazon Elastic Container Service (Amazon ECS) is a highly scalable and fast cont
 
 Reffer this doc:- https://docs.aws.amazon.com/AmazonECS/latest/developerguide/Welcome.html
 
-- Go to 
+- Go to ECS service create a cluster
+![image](https://user-images.githubusercontent.com/63963025/184519828-8cae61f6-6e95-47a4-9cb1-c3c95e90cbaf.png)
+
+- Select networking only powered by fargate 
+![image](https://user-images.githubusercontent.com/63963025/184519868-4951ea8f-975f-4a66-8c66-78cac84e9a62.png)
+
+- We are going to setup our cluster on default VPC because we have to setup in-bound out-bound rule and internet access in my case i am using default VPC you can create and setup your network all default and create cluster
+![image](https://user-images.githubusercontent.com/63963025/184519988-31e498d9-e64c-45ba-9a95-ccbd60dc28c0.png)
+
+ ![image](https://user-images.githubusercontent.com/63963025/184520038-123f0815-5a09-46bf-aad5-81bf3c889b25.png)
+
+- now we have to create Task defination <br>
+Task defination is basically a template where we can define environment variable mounting of disc you put your container image inside the task. 
+![image](https://user-images.githubusercontent.com/63963025/184520131-54f1c363-4a25-4c2c-b5e6-52e66bad526c.png)
+
+- Select Fargate
+![image](https://user-images.githubusercontent.com/63963025/184520150-d598771d-3a92-4c3f-bf5a-1ffc47c64a33.png)
+![image](https://user-images.githubusercontent.com/63963025/184520161-8b0379c3-bb88-4db8-baaa-bcc9cff17718.png)
+- Task size we have to define 
+<b>2GB</b>
+<b>1vcpu</b>
+
+- Now the main thing start form here we have to specify dockaer image port mapping and many more
+Container name<br>
+image copy image url from ECR that you have push to ECR repository 
+Memory Limits (MiB): 2048
+Port mappings: the port that you have map to your Dockerfile in my case the port number was 8081 
+![image](https://user-images.githubusercontent.com/63963025/184520264-0f2b791f-6154-435f-924a-b28c173a1783.png)
+
+## Step6 Create Loadbalancer HTTP/HTTPS Application Loadbalancer 
+- Now go to Cluster section create service before creating service we need to create Loadbalancer go EC2 section >> Loadbalancer
+we will select Application loadbalancer Http/Https 
+![image](https://user-images.githubusercontent.com/63963025/184520578-303e6400-2845-40f7-ad7f-7dab3490bf5f.png)
+![image](https://user-images.githubusercontent.com/63963025/184520676-ce449ffc-a805-4a7c-8592-587414542a34.png)
+- Select all subnet 
+![image](https://user-images.githubusercontent.com/63963025/184520690-3904c96e-4dc6-4f52-bbcd-cc5705cae27d.png)
+
+- Create new security group 
+![image](https://user-images.githubusercontent.com/63963025/184520722-0e170110-cf39-4632-b507-2be02a1e9ce3.png)
+
+ ![image](https://user-images.githubusercontent.com/63963025/184520915-e8591849-f86a-4a46-bc41-3ef667a4857d.png)
+
+- Create target Group in Listeners and routing there option Create target group 
+![image](https://user-images.githubusercontent.com/63963025/184521009-f4d8c830-d935-4540-a39b-a22df621e29c.png)
+![image](https://user-images.githubusercontent.com/63963025/184521014-4f981778-eb30-4974-8c6e-18c6d7652de6.png)
+![image](https://user-images.githubusercontent.com/63963025/184521020-be6f872f-c507-4e00-8450-519188239bf7.png)
+target group is been created lets attach to loadbalancer  
+![image](https://user-images.githubusercontent.com/63963025/184521038-e09a72ad-8fbf-4725-bee5-3178530e33e6.png)
+
+![image](https://user-images.githubusercontent.com/63963025/184521068-8072d281-0e2c-4298-ae2d-1c4ae06740b7.png)
+create loadbalancer
+
+- lets create service in ECS 
+
