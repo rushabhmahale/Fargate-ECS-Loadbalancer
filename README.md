@@ -232,5 +232,44 @@ target group is been created lets attach to loadbalancer
 ![image](https://user-images.githubusercontent.com/63963025/184521068-8072d281-0e2c-4298-ae2d-1c4ae06740b7.png)
 create loadbalancer
 
+  ## Attach Loadbalancer to ECS 
 - lets create service in ECS 
 
+![image](https://user-images.githubusercontent.com/63963025/184521729-f4e0875f-8ab1-4671-b2cd-c0ce882132e9.png)
+
+  ![image](https://user-images.githubusercontent.com/63963025/184521733-dc9e747b-8b74-4c96-bd22-304c4aba29b9.png)
+  ![image](https://user-images.githubusercontent.com/63963025/184521734-1711b373-e10c-4efc-8491-a631a773507e.png)
+
+  ![image](https://user-images.githubusercontent.com/63963025/184521840-30922484-b107-4723-abaf-54ba74dc25ae.png)
+![image](https://user-images.githubusercontent.com/63963025/184521884-9a02cfd0-8b88-4777-ab8d-8afe006ed351.png)
+  - Configure FlaskAppConatiner:8081 listen at port number 80 which for webserver 
+![image](https://user-images.githubusercontent.com/63963025/184521983-bd37c0e6-7467-4afe-bc23-36cac3ff4ff8.png)
+  - next step
+  ![image](https://user-images.githubusercontent.com/63963025/184522030-f58cc0ce-d08a-40cc-98d3-1c3fbfec3c9c.png)
+- create service 
+- this will take some to create task
+  
+  ![image](https://user-images.githubusercontent.com/63963025/184522064-8a6fa264-aace-4d57-a1ba-0669f8bd47ae.png)
+
+  ## Block diagram 
+ -  They will interact like this
+  
+  ![LB block for fargate](https://user-images.githubusercontent.com/63963025/184522303-73e2ea09-089a-4e99-a0cb-cf879d6bbda5.png)
+
+  - We will get this type of 504 error 
+  ![image](https://user-images.githubusercontent.com/63963025/184522488-1c9521e9-f9d0-426d-b667-3ee82825fbde.png)
+
+  - Go to ECS select cluster >> Service >> details >> open Security Group 
+  ![image](https://user-images.githubusercontent.com/63963025/184522578-4e5b3911-75e8-453a-9478-fb5547ad8e2b.png)
+
+  - Select the Security group that you have assign to loadbalancer
+  ![image](https://user-images.githubusercontent.com/63963025/184522613-519fbb41-8379-4441-84d8-7022c3eb337b.png)
+
+- Here we are 
+![image](https://user-images.githubusercontent.com/63963025/184522701-9a8b7bf1-4a8b-48b1-82d3-cce6e802e10c.png)
+
+- Giving /app path 
+  ![image](https://user-images.githubusercontent.com/63963025/184522666-c5703e40-b497-4d9d-9237-a620584da06f.png)
+  
+  
+  ## Try Changing webpage content. We have successfully created loadbalancer with Fargate 
