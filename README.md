@@ -41,7 +41,7 @@ Reffer to this doc steps to create ec2 machine :- https://docs.aws.amazon.com/ef
 - mkdir fargate-code 
 - cd fargate-code 
 - vi app.py 
-- [Code app.py](*)
+- [Code app.py](https://raw.githubusercontent.com/rushabhmahale/Fargate-ECS-Loadbalancer/master/app.py)
   
   ![image](https://user-images.githubusercontent.com/63963025/179386795-5b780acf-4b63-4ddb-b85d-886ac516f13b.png)
 
@@ -49,13 +49,13 @@ Reffer to this doc steps to create ec2 machine :- https://docs.aws.amazon.com/ef
 
 ![image](https://user-images.githubusercontent.com/63963025/180633226-5e21ffcf-ded0-4ad3-8e27-458358491bca.png)
 
-- [Code Dockerfile](*)
+- [Code Dockerfile](https://raw.githubusercontent.com/rushabhmahale/Fargate-ECS-Loadbalancer/master/Dockerfile)
 
 - Create <b> requirement.txt </b> 
 
 ![image](https://user-images.githubusercontent.com/63963025/180633261-a20dfb3a-76ec-4167-a757-a33da7839400.png)
 
-- [Code requirement.txt](*) 
+- [Code requirement.txt](https://raw.githubusercontent.com/rushabhmahale/Fargate-ECS-Loadbalancer/master/requirements.txt) 
  
 - Create folder <b>templates</b> and add the <b>index.html</b> content 
  
@@ -65,7 +65,7 @@ Reffer to this doc steps to create ec2 machine :- https://docs.aws.amazon.com/ef
 
 ![image](https://user-images.githubusercontent.com/63963025/180633563-b9a0ad3d-1109-4804-80a5-b9986ca4fed1.png)
 
-- [Code index.html](*)
+- [Code index.html](https://raw.githubusercontent.com/rushabhmahale/Fargate-ECS-Loadbalancer/master/templates/index.html)
 
 ![image](https://user-images.githubusercontent.com/63963025/180633621-1c315e74-1a01-446a-b9d5-c292a05b60cf.png)
 
