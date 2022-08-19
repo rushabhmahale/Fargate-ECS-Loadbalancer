@@ -9,7 +9,7 @@ Reffer this doc:- https://docs.nginx.com/nginx/admin-guide/load-balancer/http-lo
 ![FaragteLB drawio](https://user-images.githubusercontent.com/63963025/184656219-310117e3-869b-4877-b0e1-49782a11610b.png)
 
 
-## What is What is Amazon Elastic Container Service (ECS)
+## What is Amazon Elastic Container Service (ECS)
 Amazon Elastic Container Service (Amazon ECS) is a highly scalable and fast container management service. You can use it to run, stop, and manage containers on a cluster. With Amazon ECS, your containers are defined in a task definition that you use to run an individual task or task within a service. In this context, a service is a configuration that you can use to run and maintain a specified number of tasks simultaneously in a cluster. You can run your tasks and services on a serverless infrastructure that's managed by AWS Fargate. Alternatively, for more control over your infrastructure, you can run your tasks and services on a cluster of Amazon EC2 instances that you manage. <br>
 
 Reffer this doc:- https://docs.aws.amazon.com/AmazonECS/latest/developerguide/Welcome.html
