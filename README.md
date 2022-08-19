@@ -24,7 +24,7 @@ Containers provide a standard way to package your application's code, configurat
 
 Reffer this doc:- https://aws.amazon.com/getting-started/deep-dive-containers/#:~:text=Containers%20provide%20a%20standard%20way,consistent%20deployments%2C%20regardless%20of%20environment.
 
-## what is Clusters
+## What is Clusters
 An Amazon ECS cluster is a logical grouping of tasks or services. You can use clusters to isolate your applications. When your tasks are run on Fargate, your cluster resources are also managed by Fargate.
 
 Reffer this doc:- https://docs.aws.amazon.com/AmazonECS/latest/userguide/clusters.html
